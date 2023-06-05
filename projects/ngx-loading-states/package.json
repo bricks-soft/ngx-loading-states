@@ -1,6 +1,11 @@
 {
   "name": "ngx-loading-states",
   "version": "1.0.0",
+  "description": "Use RxJS to handle Angular Loading States with ease",
+  "author": {
+    "name": "Abdalla Abdelnasser",
+    "email": "abdalla.abdelnasser@gmail.com"
+  },
   "peerDependencies": {
     "@angular/common": "^15.0.4",
     "@angular/core": "^15.0.4",

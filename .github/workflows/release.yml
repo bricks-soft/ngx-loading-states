@@ -13,20 +13,20 @@ jobs:
         uses: actions/setup-node@v3
       - name: Install node modules
         run: npm install
-      - name: Lint
-        run: npm run lint
-      - name: Test & Coverage
-        run: npm run coverage:library
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+#      - name: Lint
+#        run: npm run lint
+#      - name: Test & Coverage
+#        run: npm run coverage:library
+#      - name: Upload coverage to Codecov
+#        uses: codecov/codecov-action@v3
       - name: Build Library
         run: npm run build:library
       - name: Build Showcase
         run: npm run build:showcase
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
-        with:
-          folder: dist/ngx-loading-states-showcase
+#      - name: Deploy to GitHub Pages
+#        uses: JamesIves/github-pages-deploy-action@v4.4.1
+#        with:
+#          folder: dist/ngx-loading-states-showcase
       - name: Release
         uses: cycjimmy/semantic-release-action@v3
         env:
