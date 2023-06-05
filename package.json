@@ -19,7 +19,8 @@
     "coverage:library": "jest --config projects/ngx-loading-states/jest.config.js --coverage --coverageDirectory=../../.coverage",
     "format:test": "prettier --list-different 'projects/**/*.{ts,html}'",
     "format:write": "prettier --write 'projects/**/*.{ts,html}'",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -88,5 +89,8 @@
   },
   "lint-staged": {
     "*.{ts,js,html,css,scss,less,md,json}": "prettier --write"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
