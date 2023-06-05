@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularLibraryStarter": {
+    "ngxLoadingStates": {
       "projectType": "library",
-      "root": "projects/angular-library-starter",
-      "sourceRoot": "projects/angular-library-starter/src",
+      "root": "projects/ngx-loading-states",
+      "sourceRoot": "projects/ngx-loading-states/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/angular-library-starter/ng-package.json"
+            "project": "projects/ngx-loading-states/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-library-starter/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-loading-states/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/angular-library-starter/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-loading-states/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,38 +27,36 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/angular-library-starter/tsconfig.spec.json"
+            "tsConfig": "projects/ngx-loading-states/tsconfig.spec.json"
           }
         }
       }
     },
-    "angularLibraryStarterShowcase": {
+    "ngxLoadingStatesShowcase": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/angular-library-starter-showcase",
-      "sourceRoot": "projects/angular-library-starter-showcase/src",
+      "root": "projects/ngx-loading-states-showcase",
+      "sourceRoot": "projects/ngx-loading-states-showcase/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-library-starter-showcase",
-            "index": "projects/angular-library-starter-showcase/src/index.html",
-            "main": "projects/angular-library-starter-showcase/src/main.ts",
-            "polyfills": "projects/angular-library-starter-showcase/src/polyfills.ts",
-            "tsConfig": "projects/angular-library-starter-showcase/tsconfig.app.json",
+            "outputPath": "dist/ngx-loading-states-showcase",
+            "index": "projects/ngx-loading-states-showcase/src/index.html",
+            "main": "projects/ngx-loading-states-showcase/src/main.ts",
+            "polyfills": "projects/ngx-loading-states-showcase/src/polyfills.ts",
+            "tsConfig": "projects/ngx-loading-states-showcase/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/angular-library-starter-showcase/src/favicon.ico",
-              "projects/angular-library-starter-showcase/src/assets"
+              "projects/ngx-loading-states-showcase/src/favicon.ico",
+              "projects/ngx-loading-states-showcase/src/assets"
             ],
-            "styles": [
-              "projects/angular-library-starter-showcase/src/styles.scss"
-            ],
+            "styles": ["projects/ngx-loading-states-showcase/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -77,8 +75,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/angular-library-starter-showcase/src/environments/environment.ts",
-                  "with": "projects/angular-library-starter-showcase/src/environments/environment.prod.ts"
+                  "replace": "projects/ngx-loading-states-showcase/src/environments/environment.ts",
+                  "with": "projects/ngx-loading-states-showcase/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -98,10 +96,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angularLibraryStarterShowcase:build:production"
+              "browserTarget": "ngxLoadingStatesShowcase:build:production"
             },
             "development": {
-              "browserTarget": "angularLibraryStarterShowcase:build:development"
+              "browserTarget": "ngxLoadingStatesShowcase:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -109,20 +107,18 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularLibraryStarterShowcase:build"
+            "browserTarget": "ngxLoadingStatesShowcase:build"
           }
         },
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/angular-library-starter-showcase/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-loading-states-showcase/tsconfig.spec.json",
             "assets": [
-              "projects/angular-library-starter-showcase/src/favicon.ico",
-              "projects/angular-library-starter-showcase/src/assets"
+              "projects/ngx-loading-states-showcase/src/favicon.ico",
+              "projects/ngx-loading-states-showcase/src/assets"
             ],
-            "styles": [
-              "projects/angular-library-starter-showcase/src/styles.scss"
-            ],
+            "styles": ["projects/ngx-loading-states-showcase/src/styles.scss"],
             "scripts": []
           }
         }

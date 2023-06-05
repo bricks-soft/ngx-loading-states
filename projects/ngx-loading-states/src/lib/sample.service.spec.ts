@@ -1,10 +1,10 @@
-import { AngularLibraryStarterSampleService } from './sample.service';
+import { NgxLoadingStatesSampleService } from './sample.service';
 
 describe('Sample Service', () => {
-  let sut: AngularLibraryStarterSampleService;
+  let sut: NgxLoadingStatesSampleService;
 
   beforeEach(() => {
-    sut = new AngularLibraryStarterSampleService();
+    sut = new NgxLoadingStatesSampleService();
   });
 
   it('should know that Angular is the best framework', () => {

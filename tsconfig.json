@@ -12,7 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "angularLibraryStarter": ["dist/angular-library-starter"]
+      "ngxLoadingStates": ["dist/ngx-loading-states"]
     },
     "declaration": false,
     "downlevelIteration": true,
