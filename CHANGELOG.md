@@ -4,6 +4,12 @@
 
 - added loading-states main logic ([6f04dd2](https://github.com/bricks-soft/ngx-loading-states/commit/6f04dd20befbec38d53c78101f03d5a0b7b6536c))
 
+# 1.0.0 (2023-06-05)
+
+### Features
+
+- added loading-states main logic ([6f04dd2](https://github.com/bricks-soft/ngx-loading-states/commit/6f04dd20befbec38d53c78101f03d5a0b7b6536c))
+
 ## [1.0.2](https://github.com/kreuzerk/ng-if-responsive/compare/v1.0.1...v1.0.2) (2022-12-20)
 
 ### Bug Fixes
