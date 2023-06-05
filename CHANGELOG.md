@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/bricks-soft/ngx-loading-states/compare/v1.0.0...v1.0.1) (2023-06-05)
+
+### Bug Fixes
+
+- update package version ([0e63de2](https://github.com/bricks-soft/ngx-loading-states/commit/0e63de297d7f6e3b3c7219560f5c7255b6203ac4))
+
 # 1.0.0 (2023-06-05)
 
 ### Features
