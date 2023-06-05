@@ -1,6 +1,6 @@
 {
   "name": "@bricks-soft/ngx-loading-states",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Use RxJS to handle Angular Loading States with ease",
   "author": {
     "name": "Abdalla Abdelnasser",
