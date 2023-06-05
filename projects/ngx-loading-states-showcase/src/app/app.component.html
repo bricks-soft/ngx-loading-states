@@ -10,5 +10,13 @@
     "Start building an epic Angular library and showcase it here"
   </blockquote>
 
-  <ngx-loading-states-sample class="text-xl"></ngx-loading-states-sample>
+  <div *ngIf="exampleALoadingStates$ | async as exampleALoadingStates">
+    <span *ngIf="exampleALoadingStates | isLoadingState">Loading...</span>
+    <span *ngIf="exampleALoadingStates | isErrorState">
+      error {{ exampleALoadingStates.error | json }}</span
+    >
+    <span *ngIf="exampleALoadExample$ | async as exampleAResponse">
+      LOADING DONE 🎉 - {{ exampleAResponse | json }}
+    </span>
+  </div>
 </div>

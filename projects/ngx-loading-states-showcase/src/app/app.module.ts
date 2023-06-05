@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
-
-import { NgxLoadingStatesSampleComponent } from '../../../ngx-loading-states/src/lib/sample.component';
+import { NgxLoadingStatesModule } from '../../../ngx-loading-states/src/lib/ngx-loading-states.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HighlightModule, NgxLoadingStatesSampleComponent],
+  imports: [BrowserModule, HighlightModule, NgxLoadingStatesModule],
   providers: [
     {
       provide: HIGHLIGHT_OPTIONS,
